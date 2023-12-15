@@ -59,7 +59,7 @@ esac
 
 # Install correct dependencies according to $STACK
 case "${STACK}" in
-  "scalingo-18" | "heroku-20" | "scalingo-20" | "scalingo-22")
+  "scalingo-18" | "heroku-20" | "scalingo-20" | "heroku-22" | "scalingo-22")
     # the package list is found by using ci:debug then running ldd $GOOGLE_CHROME_BIN | grep not
     # also look here for more packages/notes https://developers.google.com/web/tools/puppeteer/troubleshooting
     PACKAGES="
