@@ -19,7 +19,7 @@ channel will be used.
 ## Shims and Command Line Flags
 
 This buildpack installs shims that always add `--headless`, `--disable-gpu`,
-`--no-sandbox`, and `--remote-debugging-port=9222` to any `google-chrome`
+`--no-sandbox`, `--remote-debugging-port=9222` and `--disable-dev-shm-usage` to any `google-chrome`
 command as you'll have trouble running Chrome on a Scalingo dyno otherwise.
 
 You'll have two of these shims on your path: `google-chrome` and
@@ -33,8 +33,6 @@ the selected channel.
 >
 > **Instead, please use [Chrome for Testing buildpack](https://github.com/heroku/heroku-buildpack-chrome-for-testing)**, which installs  [matching Chrome + Chromedriver versions](https://googlechromelabs.github.io/chrome-for-testing/).
 
-## Releasing a new version
+## Special thanks
 
-Make sure you publish this buildpack in the buildpack registry
-
-`heroku buildpacks:publish heroku/google-chrome master`
+Thanks to Heroku for providing the source of this fork.

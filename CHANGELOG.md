@@ -3,6 +3,9 @@ All notable changes to this project will be documented in this file.
 
 ## Scalingo buildpack
 
+### 2024-09-29
+- Added `--disable-dev-shm-usage` flag to Chrome shims to prevent timeouts. ([source](https://github.com/GoogleChrome/lighthouse/issues/6512#issuecomment-1566851495))
+
 ### 2024-07-22
 - Sync fork with Heroku's base repository, removing deprecation warning.
 
